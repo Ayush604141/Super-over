@@ -1,89 +1,63 @@
 <!DOCTYPE html>
-<!-- 
-    Links for images.
-    Super Over Logo Image: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-logo.png"
-    Strike Button Image: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-strike-button.png"
-    Reset Button Image: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-reset-button.png"
-    Body Background Image: "https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/superover-bg.png"
- -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        Super Over
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
-    <div>
-        <img alt="Super Over" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-logo.png">
-    </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Super Over</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
+  <body>
+    <img
+      id="logo"
+      src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-logo.png"
+    />
     <section>
-
-        <div>
-
-            <div class="ind score">
-                
-                <h1>IND</h1>
-                
-               <div>
-
-                <div class="runs"></div>
-                <div class="runs"></div>
-                <div class="runs"></div>
-                <div class="runs"></div>
-                <div class="runs"></div>
-                <div class="runs"></div>
-
-               </div>
-
-                <div>
-                    <span>0</span>
-                    <span>/</span>
-                    <span>0</span>
-                </div>
-            
-            </div>
-            
-
-
-
-            <div class="pak score">
-                    
-                <h1>PAK</h1>
-                    
-                <div>
-                    <div class="runs"></div>
-                    <div class="runs"></div>
-                    <div class="runs"></div>
-                    <div class="runs"></div>
-                    <div class="runs"></div>
-                    <div class="runs"></div>
-                </div>
-
-                <div>
-                    <span>0</span>
-                    <span>/</span>
-                    <span>0</span>
-                </div>
-
-            </div>
-
+      <div class="score" id="team1">
+        <h1>IND</h1>
+        <div id="team1-superover" class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
         </div>
-            
+        <div class="scoreboard">
+          <span id="score-team1">0</span>
+          <span>/</span>
+          <span id="wickets-team1">0</span>
+        </div>
+      </div>
+      <div class="score" id="team2">
+        <h1>PAK</h1>
+        <div id="team2-superover" class="balls">
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+        </div>
+        <div class="scoreboard">
+          <span id="score-team2">0</span>
+          <span>/</span>
+          <span id="wickets-team2">0</span>
+        </div>
+      </div>
     </section>
-
-    <section>
-        <img alt="Strike" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-strike-button.png" class="down">
-
-        <img alt="Reset" src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-reset-button.png" class="down">        
-    
+    <section id="buttons">
+      <img
+        class="button"
+        id="strike"
+        src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-strike-button.png"
+      />
+      <img
+        class="button"
+        id="reset"
+        src="https://s3.ap-south-1.amazonaws.com/kalvi-education.github.io/front-end-web-development/so-reset-button.png"
+      />
     </section>
-
-    
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
